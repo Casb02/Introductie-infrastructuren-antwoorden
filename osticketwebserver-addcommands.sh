@@ -33,7 +33,7 @@ sudo curl -s https://api.github.com/repos/osTicket/osTicket/releases/latest \
 
 # install software "unzip"
 
-change this line to install "unzip"
+sudo apt-get install unzip
 
 # unzip osticket in directory osTicket
 
