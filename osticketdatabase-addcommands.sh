@@ -2,15 +2,12 @@
 
 # Update the list of available software
 
-change this line in command to update
-
-# Upgrade the system
-
-change this line in command to upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 
 # Install mysql-server
 
-change this line to install mysql-server
+sudo apt-get install mysql-server -y
+
 
 # change directory to /etc/mysql/mysql.conf.d
 
@@ -23,7 +20,8 @@ sudo sed -i 's/127.0.0.1/0.0.0.0/g' mysqld.cnf
 
 # Start the service mysql
 
-change this line to start the service mysql
+sudo systemctl start mysql
+sudo systemctl enable mysql
 
 # create database with name osticket
 sudo mysql -e "CREATE DATABASE osticket;"
@@ -36,8 +34,8 @@ sudo mysql -e "FLUSH PRIVILEGES"
 
 # change directory to the home directory
 
-change this line to change directory to the home directory
+cd ~
 
 # restart the mysql service
 
-change this line to restart the service mysql
+sudo systemctl restart msyql
