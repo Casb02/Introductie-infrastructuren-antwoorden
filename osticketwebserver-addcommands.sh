@@ -1,16 +1,12 @@
 #!/bin/bash
 
-# update the list of available software
+# update and upgrade the list of available software
 
-change this line in command to update
-
-# upgrade the system
-
-change this lin in command to upgrade
+sudo apt-get update -y && sudo apt-get upgrade -y
 
 # install apache2
 
-change this line to install apache2
+sudo apt-get install apache2 -y
 
 # install php and other requires software
 
@@ -18,12 +14,11 @@ sudo apt install php libapache2-mod-php php-{fpm,pear,imap,apcu,intl,cgi,common,
 
 # install required software "curl"
 
-change this line to install software curl
+sudo apt-get install curl -y
 
 # start service apache2
 
-change this line to start service apache2
-
+sudo systemctl start apache2
 # enable apache2 so it automatically starts after reboot
 
 sudo systemctl enable apache2
@@ -46,11 +41,11 @@ sudo unzip osTicket-v*.zip -d osTicket
 
 # verplaats directory osTicket onder de directory /var/www/html
 
-change this line to move osTicket to /var/www/html
+cd /var/www/html
 
 # change directory to /var/www/html/osTicket/upload/include
 
-change this line to change directory to /var/www/html/osTicket/upload/include
+cd /var/www/html/osTicket/upload/include
 
 # copy the file ost-sampleconfig.php to ost-config.php
 
@@ -67,4 +62,4 @@ sudo apt install mysql-client-core-8.0
 
 # restart service apache2 
 
-change this line to restart the service apache2
+sudo systemctl restart apache2
