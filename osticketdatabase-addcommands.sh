@@ -38,4 +38,4 @@ cd ~
 
 # restart the mysql service
 
-sudo systemctl restart msyql
+sudo systemctl restart mysql
