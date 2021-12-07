@@ -41,7 +41,7 @@ sudo unzip osTicket-v*.zip -d osTicket
 
 # verplaats directory osTicket onder de directory /var/www/html
 
-sudo cp ~/osTicket/ /var/www/html/
+sudo cp -avr ~/osTicket/ /var/www/html/
 
 # change directory to /var/www/html/osTicket/upload/include
 
