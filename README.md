@@ -9,6 +9,7 @@
 - Maak 2 Ubuntu machines aan met Ubunutu Server geinstaleerd.
 - Zorg er voor dat je beide machines goed hebt opgezet en de wachtwoorden weet
 - Geef beide VM's een naam, Noem ze bijvoorbeeld `ubuntu-server-web` en `ubuntu-server-db`
+- Zorg er altijd voor dat je in de home directory zit je kan altijd `cd ~` doen om er hene te gaan!
 ---
 
 #### Virtuele machine 1 - Apache2 webserver
