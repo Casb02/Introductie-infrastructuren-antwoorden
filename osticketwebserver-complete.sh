@@ -43,6 +43,9 @@ sudp rm -r osTicket -y
 
 sudo unzip osTicket-v*.zip -d osTicket
 
+#remove old osTicket 
+sudp rm -r /var/www/html/osTicket -y
+
 # verplaats directory osTicket onder de directory /var/www/html
 
 sudo cp -avr osTicket /var/www/html/
