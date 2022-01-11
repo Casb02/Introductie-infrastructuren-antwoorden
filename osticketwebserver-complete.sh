@@ -37,14 +37,14 @@ sudo apt-get install unzip -y
 
 # remove old osTicket
 
-sudp rm -r osTicket -y
+sudp rm -r osTicket 
 
 # unzip osticket in directory osTicket
 
 sudo unzip osTicket-v*.zip -d osTicket
 
 #remove old osTicket 
-sudp rm -r /var/www/html/osTicket -y
+sudp rm -r /var/www/html/osTicket
 
 # verplaats directory osTicket onder de directory /var/www/html
 
