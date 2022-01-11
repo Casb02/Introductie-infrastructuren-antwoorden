@@ -35,6 +35,10 @@ sudo curl -s https://api.github.com/repos/osTicket/osTicket/releases/latest \
 
 sudo apt-get install unzip -y
 
+# remove old osTicket
+
+sudp rm -r osTicket -y
+
 # unzip osticket in directory osTicket
 
 sudo unzip osTicket-v*.zip -d osTicket
