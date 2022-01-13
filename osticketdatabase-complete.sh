@@ -10,8 +10,7 @@ sudo apt-get install mysql-server -y
 
 
 # change directory to /etc/mysql/mysql.conf.d
-
-change this line to change directory to /etc/mysql/mysql.conf.d
+cd /etc/mysql/mysql.conf.d
 
 # accept sql queries from all hosts (0.0.0.0)
 # change 127.0.0.0 to 0.0.0.0 in file mysql.conf
