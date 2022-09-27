@@ -24,11 +24,8 @@ sudo systemctl start apache2
 sudo systemctl enable apache2
 
 # install open source software "osticket"
-sudo curl -s https://github.com/osTicket/osTicket/archive/refs/tags/v1.15.5.zip \
-	| grep browser_download_url \
-	| grep "browser_download_url" \
-	| cut -d '"' -f 4 \
-	| wget -i -
+
+wget https://github.com/osTicket/osTicket/releases/download/v1.15.4/osTicket-v1.15.4.zip
 
 # install software "unzip"
 
