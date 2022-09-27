@@ -24,8 +24,7 @@ sudo systemctl start apache2
 sudo systemctl enable apache2
 
 # install open source software "osticket"
-
-sudo curl -s https://api.github.com/repos/osTicket/osTicket/release/1.15.3/ \
+sudo curl -s https://github.com/osTicket/osTicket/archive/refs/tags/v1.15.5.zip \
 	| grep browser_download_url \
 	| grep "browser_download_url" \
 	| cut -d '"' -f 4 \
@@ -37,14 +36,14 @@ sudo apt-get install unzip -y
 
 # remove old osTicket
 
-sudp rm -r osTicket 
+sudo rm -r osTicket 
 
 # unzip osticket in directory osTicket
 
 sudo unzip osTicket-v*.zip -d osTicket
 
 #remove old osTicket 
-sudp rm -r /var/www/html/osTicket
+sudo rm -r /var/www/html/osTicket
 
 # verplaats directory osTicket onder de directory /var/www/html
 
